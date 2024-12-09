@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox code-along</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      main {
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1vw;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        width: 10vw;
+        height: 10vw;
+        background-color: red;
+      }
+      div:nth-child(2) {
+        align-items: flex-end;
+      }
+      div:nth-child(3) {
+        align-items: flex-end;
+        justify-content: end;
+      }
+      div:nth-child(4) {
+        align-items: flex-start;
+        justify-content: flex-end;
+      }
+      div:nth-child(5) {
+        align-items: center;
+        justify-content: center;
+      }
+      div:nth-child(6) {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      div:nth-child(6) span {
+        margin: 1vw;
+      }
+      div:nth-child(7) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      div:nth-child(8) {
+        align-items: flex-end;
+        justify-content: flex-start;
+      }
+      div:nth-child(8) span {
+        margin-right: 1vw;
+        margin-top: 1vw;
+      }
+      div span {
+        width: 1vw;
+        height: 1vw;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div><span></span></div>
+      <div><span></span></div>
+      <div><span></span></div>
+      <div><span></span></div>
+      <div><span></span></div>
+      <div><span></span></div>
+      <div><span></span></div>
+      <div><span></span></div>
+    </main>
+  </body>
+</html>
